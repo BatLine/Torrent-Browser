@@ -19,7 +19,8 @@ namespace tor_browser
         public string size;
         public string magnet;
         public string uploaded;
-        public  string strHealth;
+        public string strHealth;
+        public double seeders;
         int yLocPanel = 24;
         bool oneLapDone = false;
         bool halfLapDone = false;
@@ -32,9 +33,9 @@ namespace tor_browser
         {
             lblName.Text = name;
             pbHealth.Value = Convert.ToInt16(health * 100);
-            if (pbHealth.Value <= 50) { pbHealth.ProgressColor = Color.Red; }
-            else if (pbHealth.Value > 70) { pbHealth.ProgressColor = Color.Green; }
-            else { pbHealth.ProgressColor = Color.Orange; }
+            if (seeders >= 100) { pbHealth.ProgressColor = Color.Green; }
+            else if (seeders >= 20) { pbHealth.ProgressColor = Color.Orange; }
+            else { pbHealth.ProgressColor = Color.Red; }
             lblRatio.Text = strHealth;
             if (health >= 1) { lblRatio.ForeColor = Color.Green; }
             else if (health >= 0.5) { lblRatio.ForeColor = Color.Orange; }
@@ -107,6 +108,8 @@ namespace tor_browser
         private void LblIsTrustedLabel_Click(object sender, EventArgs e)
         { PnlInfo_MouseHover(sender, e); }
         private void LblIsTrusted_Click(object sender, EventArgs e)
+        { PnlInfo_MouseHover(sender, e); }
+        private void LblName_Click(object sender, EventArgs e)
         { PnlInfo_MouseHover(sender, e); }
     }
 }

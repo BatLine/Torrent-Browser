@@ -30,7 +30,7 @@ namespace tor_browser
 
         async void displayTorrents(int page)
         {
-            System.Threading.Thread.Sleep(1000);
+            Thread.Sleep(500);
             pnlItems.Controls.Clear();
 
             p = new pages(torrents);
@@ -60,18 +60,22 @@ namespace tor_browser
         }
         void displayTorrents(List<Control> cs)
         {
-            foreach (Control c in cs)
+            try
             {
-                bunifuTransition1.ShowSync(c);
-                Thread.Sleep(5);
-            }
-            BeginInvoke((MethodInvoker)delegate ()
-            {
-                pnlPages.Location = new Point(this.Width / 2 - pnlPages.Width / 2, pnlItems.Location.X + pnlItems.Height + 60);
-                this.Size = new Size(this.Width, this.Height + pnlPages.Height + 10);
-                this.CenterToScreen();
-                pnlPages.Visible = true;
-            });
+                foreach (Control c in cs)
+                {
+                    bunifuTransition1.ShowSync(c);
+                    Thread.Sleep(5);
+                }
+                BeginInvoke((MethodInvoker)delegate ()
+                {
+                    pnlPages.Location = new Point(this.Width / 2 - pnlPages.Width / 2, pnlItems.Location.X + pnlItems.Height + 60);
+                    this.Size = new Size(this.Width, 636 + pnlPages.Height + 10);
+                    this.CenterToScreen();
+                    pnlPages.Visible = true;
+                    this.Focus();
+                });
+            } catch (Exception) { }
         }
         private void BtnPage1_Click(object sender, EventArgs e)
         { displayTorrents(0); }

@@ -43,8 +43,9 @@ namespace tor_browser
                 pageItem pi = new pageItem();
                 pi.name = t.Name;
                 if (t.Leechers <= 0) { pi.health = 1; }
-                else if (t.Seeds / t.Leechers >= 1) { pi.health = 1; }
+                else if (t.Seeds / t.Leechers >= 2) { pi.health = 1; }
                 else { pi.health = t.Seeds / t.Leechers; }
+                pi.seeders = t.Seeds;
                 pi.category = convertCategory(t.Category);
                 pi.isTrusted = t.IsTrusted;
                 pi.size = t.Size;

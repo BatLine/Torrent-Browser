@@ -16,7 +16,13 @@
         "Entry"
         {
         "MsmKey" = "8:_105069D944EAA1D8D63B5B886B343B79"
-        "OwnerKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+        "OwnerKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,13 +52,13 @@
         "Entry"
         {
         "MsmKey" = "8:_4D384CF75CEE329B1B29CC3A23854F41"
-        "OwnerKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+        "OwnerKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_5B7AF556E4280B44CAA8055F147109E6"
-        "OwnerKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+        "OwnerKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -64,19 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_6ABDCFEDD912377A92DB5A57D9C9F28F"
-        "OwnerKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+        "OwnerKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_6ABDCFEDD912377A92DB5A57D9C9F28F"
         "OwnerKey" = "8:_105069D944EAA1D8D63B5B886B343B79"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,7 +94,7 @@
         "Entry"
         {
         "MsmKey" = "8:_C60BEB7E9BFBA2BE63305CD14C0CB658"
-        "OwnerKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+        "OwnerKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -106,7 +106,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+        "OwnerKey" = "8:_3CD4E5FB51AE868070E6060E2DF00C03"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -149,12 +155,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A1CDB68EC0678D7F943BB71FE0BA2383"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3CD4E5FB51AE868070E6060E2DF00C03"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -214,6 +214,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -599,15 +607,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Torrent Browser"
-        "ProductCode" = "8:{EFE60C2A-865B-4694-B1B7-41A31868A701}"
-        "PackageCode" = "8:{F3CE844B-7164-4D67-ADDB-2C2792172B6E}"
-        "UpgradeCode" = "8:{FE7C6AAB-3394-4359-8313-1E24E238941C}"
+        "ProductCode" = "8:{3D560C43-BCA9-46F6-929C-B65C74F1D951}"
+        "PackageCode" = "8:{0B4A2FAE-5602-4EC0-8BA9-7DF1810BA38A}"
+        "UpgradeCode" = "8:{88CAC1E8-9816-4D2D-84CD-D18B36EBFC08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.2"
         "Manufacturer" = "8:BatLine"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -617,7 +625,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:BatLine's Torrent Browser"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_F432228690AE4FFBBC44E58DEAFE483D"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -720,7 +728,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B5D08AA0015A4A1EA5162420896995A4"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_056436DD62A04B4A9C5658A432ECA60B"
             {
             "Name" = "8:Torrent Browser"
             "Arguments" = "8:"
@@ -728,7 +736,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
+            "Target" = "8:_2F4731B815F043E4BAB95EDA99F8C515"
             "Folder" = "8:_97ADC10971A44943B1632ED634F1D3E2"
             "WorkingFolder" = "8:_1F8A5899606141E38BA41E6A66A127B3"
             "Icon" = "8:_F432228690AE4FFBBC44E58DEAFE483D"
@@ -1133,7 +1141,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_93F9C824237A41E8BA68F4DBA0061A1F"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2F4731B815F043E4BAB95EDA99F8C515"
             {
             "SourcePath" = "8:..\\tor_browser\\obj\\Debug\\tor_browser.exe"
             "TargetName" = "8:"

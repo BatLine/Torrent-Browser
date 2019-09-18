@@ -11,13 +11,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using The_Pirate_Bay;
 using System.IO;
+using System.Security.Principal;
 
 namespace tor_browser
 {
     public partial class frmMain : Form
     {
         frmSearchResults sr = new frmSearchResults();
-        string version = "2.1";
+        string version = "2.3";
         string programURL = "https://dl.dropbox.com/s/f0qjyvj2qzx14vs/tor_browser.exe?dl=0";
         double currentSearchTime = 0;
 
@@ -151,6 +152,7 @@ namespace tor_browser
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
+            if (!IsElevated) { MessageBox.Show("Program is not running with administrator rights.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
             DialogResult d = MessageBox.Show("This will try to update the application." + Environment.NewLine + "Continue?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (d == DialogResult.No) { return; }
             else if (d == DialogResult.Yes)
@@ -160,7 +162,14 @@ namespace tor_browser
             }
             else { return; }
         }
-
+        static bool IsElevated
+        {
+            get
+            {
+                return WindowsIdentity.GetCurrent().Owner
+                  .IsWellKnown(WellKnownSidType.BuiltinAdministratorsSid);
+            }
+        }
         public static void UpdateSelf(byte[] buffer)
         {
             var self = System.Reflection.Assembly.GetExecutingAssembly().Location;
@@ -200,5 +209,6 @@ namespace tor_browser
                 Environment.Exit(0);
             }
         }
+
     }
 }

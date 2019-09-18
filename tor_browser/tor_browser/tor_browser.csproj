@@ -136,6 +136,7 @@
     <Content Include="browser.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\download.png" />
     <None Include="Resources\close.png" />
     <None Include="Resources\2.png" />
     <None Include="Resources\1.png" />

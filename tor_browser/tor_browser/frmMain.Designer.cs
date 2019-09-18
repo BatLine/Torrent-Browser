@@ -45,8 +45,8 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnUpdate = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlDelayed = new System.Windows.Forms.Panel();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblVersion = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -73,7 +73,7 @@
             this.txtSearchname.LineMouseHoverColor = System.Drawing.Color.Red;
             this.txtSearchname.LineThickness = 2;
             this.txtSearchname.Location = new System.Drawing.Point(13, 50);
-            this.txtSearchname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchname.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchname.Name = "txtSearchname";
             this.txtSearchname.Size = new System.Drawing.Size(422, 52);
             this.txtSearchname.TabIndex = 1;
@@ -86,7 +86,7 @@
             this.btnSearch.Image = global::tor_browser.Properties.Resources.search;
             this.btnSearch.ImageActive = null;
             this.btnSearch.Location = new System.Drawing.Point(442, 50);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(48, 52);
             this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,7 +137,7 @@
             this.cboTypes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTypes.FormattingEnabled = true;
             this.cboTypes.Location = new System.Drawing.Point(108, 164);
-            this.cboTypes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTypes.Margin = new System.Windows.Forms.Padding(2);
             this.cboTypes.Name = "cboTypes";
             this.cboTypes.Size = new System.Drawing.Size(158, 25);
             this.cboTypes.TabIndex = 6;
@@ -198,7 +198,7 @@
             this.btnClose.Image = global::tor_browser.Properties.Resources.close;
             this.btnClose.ImageActive = null;
             this.btnClose.Location = new System.Drawing.Point(466, 7);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 26);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +217,7 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.Image = global::tor_browser.Properties.Resources.close;
+            this.btnUpdate.Image = global::tor_browser.Properties.Resources.download;
             this.btnUpdate.ImageActive = null;
             this.btnUpdate.Location = new System.Drawing.Point(438, 7);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
@@ -239,18 +239,6 @@
             this.pnlDelayed.TabIndex = 15;
             this.pnlDelayed.Visible = false;
             // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.DimGray;
-            this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(3, 1);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(10, 23);
-            this.bunifuSeparator3.TabIndex = 0;
-            this.bunifuSeparator3.Transparency = 255;
-            this.bunifuSeparator3.Vertical = true;
-            // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
@@ -258,7 +246,19 @@
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(196, 13);
             this.bunifuCustomLabel4.TabIndex = 1;
-            this.bunifuCustomLabel4.Text = "Searching takes longer then expected...";
+            this.bunifuCustomLabel4.Text = "Searching takes longer than expected...";
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(3, 1);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(10, 23);
+            this.bunifuSeparator3.TabIndex = 0;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = true;
             // 
             // lblVersion
             // 
@@ -297,7 +297,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";

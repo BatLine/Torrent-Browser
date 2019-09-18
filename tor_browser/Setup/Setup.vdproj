@@ -99,8 +99,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3CD4E5FB51AE868070E6060E2DF00C03"
+        "MsmKey" = "8:_F432228690AE4FFBBC44E58DEAFE483D"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -151,6 +151,12 @@
         "OwnerKey" = "8:_A1CDB68EC0678D7F943BB71FE0BA2383"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3CD4E5FB51AE868070E6060E2DF00C03"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -169,6 +175,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -185,6 +207,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -493,6 +523,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F432228690AE4FFBBC44E58DEAFE483D"
+            {
+            "SourcePath" = "8:..\\..\\icons\\browser.ico"
+            "TargetName" = "8:browser.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_1F8A5899606141E38BA41E6A66A127B3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -550,7 +600,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Torrent Browser"
         "ProductCode" = "8:{EFE60C2A-865B-4694-B1B7-41A31868A701}"
-        "PackageCode" = "8:{98030643-4602-4593-A39A-78142FAF95E8}"
+        "PackageCode" = "8:{F3CE844B-7164-4D67-ADDB-2C2792172B6E}"
         "UpgradeCode" = "8:{FE7C6AAB-3394-4359-8313-1E24E238941C}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -674,14 +724,14 @@
             {
             "Name" = "8:Torrent Browser"
             "Arguments" = "8:"
-            "Description" = "8:"
+            "Description" = "8:BatLine's Torrent Browser"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_93F9C824237A41E8BA68F4DBA0061A1F"
             "Folder" = "8:_97ADC10971A44943B1632ED634F1D3E2"
             "WorkingFolder" = "8:_1F8A5899606141E38BA41E6A66A127B3"
-            "Icon" = "8:"
+            "Icon" = "8:_F432228690AE4FFBBC44E58DEAFE483D"
             "Feature" = "8:"
             }
         }
@@ -1083,34 +1133,6 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4E4AAB9E41EA42B391FB345D1B98E0F6"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_1F8A5899606141E38BA41E6A66A127B3"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{238308D7-C910-41E9-A9F6-A5467B5520A8}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_93F9C824237A41E8BA68F4DBA0061A1F"
             {
             "SourcePath" = "8:..\\tor_browser\\obj\\Debug\\tor_browser.exe"

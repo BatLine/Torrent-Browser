@@ -49,10 +49,12 @@
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblVersion = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
+            this.btnWebBrowser = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
             this.pnlDelayed.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnWebBrowser)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -63,7 +65,7 @@
             // txtSearchname
             // 
             this.txtSearchname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchname.ForeColor = System.Drawing.Color.White;
             this.txtSearchname.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearchname.HintText = "";
@@ -79,6 +81,7 @@
             this.txtSearchname.TabIndex = 1;
             this.txtSearchname.Text = "photoshop";
             this.txtSearchname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearchname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchname_KeyDown);
             // 
             // btnSearch
             // 
@@ -235,7 +238,7 @@
             this.pnlDelayed.Controls.Add(this.bunifuSeparator3);
             this.pnlDelayed.Location = new System.Drawing.Point(151, 7);
             this.pnlDelayed.Name = "pnlDelayed";
-            this.pnlDelayed.Size = new System.Drawing.Size(282, 26);
+            this.pnlDelayed.Size = new System.Drawing.Size(254, 26);
             this.pnlDelayed.TabIndex = 15;
             this.pnlDelayed.Visible = false;
             // 
@@ -273,6 +276,21 @@
             // 
             this.tmrTime.Tick += new System.EventHandler(this.TmrTime_Tick);
             // 
+            // btnWebBrowser
+            // 
+            this.btnWebBrowser.BackColor = System.Drawing.Color.Transparent;
+            this.btnWebBrowser.Image = global::tor_browser.Properties.Resources.internet;
+            this.btnWebBrowser.ImageActive = null;
+            this.btnWebBrowser.Location = new System.Drawing.Point(410, 7);
+            this.btnWebBrowser.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWebBrowser.Name = "btnWebBrowser";
+            this.btnWebBrowser.Size = new System.Drawing.Size(24, 26);
+            this.btnWebBrowser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnWebBrowser.TabIndex = 17;
+            this.btnWebBrowser.TabStop = false;
+            this.btnWebBrowser.Zoom = 10;
+            this.btnWebBrowser.Click += new System.EventHandler(this.btnWebBrowser_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +298,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(499, 203);
             this.ControlBox = false;
+            this.Controls.Add(this.btnWebBrowser);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.pnlDelayed);
             this.Controls.Add(this.btnUpdate);
@@ -310,6 +329,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
             this.pnlDelayed.ResumeLayout(false);
             this.pnlDelayed.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnWebBrowser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,6 +356,7 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private Bunifu.Framework.UI.BunifuCustomLabel lblVersion;
         private System.Windows.Forms.Timer tmrTime;
+        private Bunifu.Framework.UI.BunifuImageButton btnWebBrowser;
     }
 }
 

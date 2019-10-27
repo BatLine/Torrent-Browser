@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="searchQuery" Type="System.String" Scope="User">
-      <Value Profile="(Default)">spotify</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

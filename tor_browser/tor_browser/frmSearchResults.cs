@@ -49,7 +49,8 @@ namespace tor_browser
                 c.Visible = false;
                 pnlItems.Controls.Add(c);
                 pnlItems.Height = lastYCordItem + pi.Height;
-                listItems.Add(c);
+                if (string.IsNullOrWhiteSpace(pi.name))
+                { listItems.Add(c); }
             }
 
             if (p._pages.Count < 1) { btnPage1.Enabled = false; btnPage2.Enabled = false; }

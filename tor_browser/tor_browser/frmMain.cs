@@ -18,7 +18,7 @@ namespace tor_browser
     public partial class frmMain : Form
     {
         frmSearchResults sr = new frmSearchResults();
-        string version = "2.3";
+        string version = "2.3.4";
         string programURL = "https://dl.dropbox.com/s/f0qjyvj2qzx14vs/tor_browser.exe?dl=0";
         double currentSearchTime = 0;
 
@@ -152,7 +152,20 @@ namespace tor_browser
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            if (!IsElevated) { MessageBox.Show("Program is not running with administrator rights.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
+            if (!IsElevated)
+            {
+                DialogResult dd = MessageBox.Show("Program is not running with administrator rights." + Environment.NewLine + "The program will now restart with administrator rights, continue?", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                if (dd == DialogResult.OK)
+                {
+                    var exeName = Process.GetCurrentProcess().MainModule.FileName;
+                    ProcessStartInfo startInfo = new ProcessStartInfo(exeName);
+                    startInfo.Verb = "runas";
+                    Process.Start(startInfo);
+                    Application.Exit();
+                    return;
+                }
+                else { return; }
+            }
             DialogResult d = MessageBox.Show("This will try to update the application." + Environment.NewLine + "Continue?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (d == DialogResult.No) { return; }
             else if (d == DialogResult.Yes)
@@ -210,5 +223,23 @@ namespace tor_browser
             }
         }
 
+        private void txtSearchname_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            { BtnSearch_Click(sender, e); }
+        }
+
+        private void btnWebBrowser_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Query q = new Query("test", 1, 0);
+                string[] linkSplit = q.TranslateToUrl().Split('/');
+                string link = linkSplit[0] + linkSplit[1] + linkSplit[2];
+                Process.Start(link);
+            }
+            catch (Exception)
+            { MessageBox.Show("Error", "Error in getting correct link." + Environment.NewLine + "Try again later.", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
     }
 }

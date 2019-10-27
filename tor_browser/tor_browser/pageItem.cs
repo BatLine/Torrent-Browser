@@ -21,6 +21,7 @@ namespace tor_browser
         public string uploaded;
         public string strHealth;
         public double seeders;
+        int yLocPanel = 24;
         bool oneLapDone = false;
         bool halfLapDone = false;
         bool mouseLeft = false;
